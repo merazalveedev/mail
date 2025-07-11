@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>সেবা সাময়িকভাবে বন্ধ</title>
+  <link href="https://banglawebfonts.pages.dev/css/sapa.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+        background-color: #ffe3e3;
+        background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 22.5px 22.5px, linear-gradient(#f3f3f3 1.8px, transparent 1.8px) 0 -0.9px, linear-gradient(90deg, #f3f3f3 1.8px, #ffffff 1.8px) -0.9px 0;
+        background-size: 45px 45px, 45px 45px, 22.5px 22.5px, 22.5px 22.5px;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Sapa', sans-serif;
+      padding: 20px;
+      text-align: center;
+      color: #333;
+      flex-direction: column;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo {
+      height: 60px;
+      margin-bottom: 25px;
+      animation: float 3s ease-in-out infinite;
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    h2 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #d32f2f;
+      margin-bottom: 14px;
+      animation: colorChange 1s infinite alternate;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: #000000;
+      }
+      100% {
+        color: #ff0000;
+      }
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #444;
+      max-width: 460px;
+      margin-bottom: 26px;
+      animation: textGlow 3s infinite alternate;
+    }
+
+    @keyframes textGlow {
+      0% {
+        color: #444;
+      }
+      50% {
+        color: #555;
+        text-shadow: 0 0 5px rgba(234, 67, 53, 0.1);
+      }
+      100% {
+        color: #666;
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #4285F4, #34A853);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      animation: btnPulse 3s infinite;
+      border: none;
+      cursor: pointer;
+    }
+
+    @keyframes btnPulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      50% {
+        transform: scale(1.03);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 15px;
+        max-width: 90%;
+      }
+      .logo {
+        height: 60px;
+        margin-bottom: 20px;
+      }
+      .btn {
+        padding: 10px 22px;
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://brandlogos.net/wp-content/uploads/2025/04/gmail-logo_brandlogos.net_eqenr-512x128.png" alt="Gmail Logo" class="logo">
+  <h2>• • •  Gmail সেবা সাময়িকভাবে বন্ধ  • • •</h2>
+  <p>প্রযুক্তিগত সমস্যার কারণে আমাদের Gmail সেবা বর্তমানে অস্থায়ীভাবে বন্ধ রাখা হয়েছে।<br>আপনি চাইলে এখনই Facebook-এর মাধ্যমে কাজ চালিয়ে যেতে পারেন।</p>
+</body>
+</html>
